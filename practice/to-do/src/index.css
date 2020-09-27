@@ -1,17 +1,40 @@
-.body{
+body{
     margin:0;
+}
+#root{
+    margin:0;
+    display:grid;
+    grid-template-columns:35% auto 35%;
+    grid-template-rows:30px auto 100px;
+    background-color:whitesmoke;
+    height: 900px;
 }
 
 .TodoList{
-    background-color: #eec0c6;
-background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
-    padding-bottom: 5px;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    grid-column: 2/ span 1;
+    grid-row: 2/3;
+    background-color: aqua;
+    display: subgrid;
+    border-radius: 5%;
+    display: grid;
+    grid-template-rows: 50px repeat(30px) [before]5%[final];
 }
+
 .TodoHeader{
   display:flex;
+  font-size: 2rem;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .TodoItem{
     display:flex;
-    justify-content: center;
+    justify-content: start;
+    font-size: 2rem;
+}
+.TodoFooter{
+    justify-self: center;
+    font-size: .7rem;
+    grid-row: [before]/[final];
 }
