@@ -1,0 +1,21 @@
+.home{
+    height:100%;
+}
+.jokeBox{
+    display: grid;
+    grid-template-rows: 10% 10%;
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-row-gap: 10px;
+}
+
+.joke{
+    color:purple;
+    grid-row: 1/2;
+}
+
+.punch{
+    color:red;
+    grid-row: 2/3;
+}
+
