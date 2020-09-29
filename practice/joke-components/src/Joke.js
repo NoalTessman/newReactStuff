@@ -7,7 +7,8 @@ function Joke(props){
             Joke: {props.body}
             </div>
             <div className = "punch">
-            Punchline: {props.punchline}
+            Punchline: {props.punchline} 
+            {console.log(props)}
             </div>        
         </div>
     )
