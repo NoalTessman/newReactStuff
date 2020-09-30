@@ -30,7 +30,8 @@ body{
 
 .TodoItem{
     display:flex;
-    justify-content: start;
+    justify-content: center;
+    flex-direction: row;
     font-size: 2rem;
 }
 .TodoFooter{
