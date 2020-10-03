@@ -1,6 +1,7 @@
 import React from "react"
 import '../node_modules/react-vis/dist/style.css';
 import {XYPlot,HorizontalGridLines, VerticalGridLines, XAxis, YAxis, HorizontalBarSeries} from 'react-vis';
+import randNumber from "./randNumber"
 
 class Plotter extends React.Component {
    constructor(){ 
@@ -12,25 +13,17 @@ class Plotter extends React.Component {
     }
     render(){
         const data = [
-            {x: this.state.randNumber, y: 8},
-            {x: this.state.randNumber, y: 5},
-            {x: this.state.randNumber, y: 4},
-            {x: this.state.randNumber, y: 9},
-            {x: this.state.randNumber, y: 1},
-            {x: this.state.randNumber, y: 7},
-            {x: this.state.randNumber, y: 6},
-            {x: this.state.randNumber, y: 3},
-            {x: this.state.randNumber, y: 2},
-            {x: this.state.randNumber, y: 0}
+            {x: 1, y: 8},
           ];
+
         console.log(data)
 
     return(
         <XYPlot height={300} width= {300}>
 
-    <HorizontalBarSeries data={data} />
+    <HorizontalBarSeries data={data.props} />
     <VerticalGridLines />
-     <HorizontalGridLines />
+    <HorizontalGridLines />
     <XAxis />
     <YAxis />
     </XYPlot>   

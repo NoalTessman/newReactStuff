@@ -4,10 +4,10 @@ function Item(props){
 
     return(
         <div className="TodoItem">
-        <input type="checkbox" 
+        <input className="TodoItemButton" type="checkbox" 
         checked = {props.completed}
         onChange={() =>props.handleChange(props.id)}/>
-        <p>{props.todo}</p>
+        <div className="TodoItemText">{props.todo}</div>
         </div>
     )
 }
