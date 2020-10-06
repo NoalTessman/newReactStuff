@@ -1,0 +1,7 @@
+.characterCard{
+    width: 200px;
+    height: 400px;
+    background-color: rgba(127, 255, 212, 0.493);
+    display: flex;
+    justify-content: space-evenly;
+}

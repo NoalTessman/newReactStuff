@@ -7,7 +7,8 @@ class App extends Component{
   constructor(){
     super()
     this.state={
-      todos: todoItems
+      todos: todoItems,
+      completed: false
     }
     this.handleChange = this.handleChange.bind(this)
   }

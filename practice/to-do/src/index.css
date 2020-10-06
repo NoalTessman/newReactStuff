@@ -31,9 +31,11 @@ body{
 .TodoItem{
     font-size: 1rem;
     margin: 5px;
-    background-color: rgba(216, 191, 216, 0.637);
+    background-color: rgba(216, 191, 216, 0.767);
     display: grid;
     grid-template-columns: 20px;
+    transition: 3s;
+    
 }
 .TodoItemButton{
     display: flex;
@@ -41,7 +43,6 @@ body{
     justify-content: center;
     background-color: #ddd;
     border-radius: 50%;
-    transition: .3s background-color;
 }
 .TodoItemText{
     grid-column: 2/3;
