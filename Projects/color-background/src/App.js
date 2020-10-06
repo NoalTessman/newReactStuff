@@ -1,17 +1,26 @@
 import React from "react"
 import Square from "./Components/SquareComponent"
 import  v4  from "uuid";
-let count = 0
-function App(){
-const Squares =
-    [...Array(16)].map(item =>
-        item.append(count),
-        <Square key={item.count} div={item.div}/>,
-        console.log("test")
-      )
-return(
-<div className="squareBox">
-    {Squares}
-</div>
-)}
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+
+        }
+    }
+    render(){
+        const createBoxes = count => {
+            return(<div className="squareBox">{Array(count).fill(1).map((input,i)=>(
+                    <Square index={i} key={v4()}/>))}
+                   </div>)
+          }
+    return(
+        <div>
+                {createBoxes(100)}
+        <header>
+            Hello
+        </header>
+        </div>
+    )}
+            }
 export default App
