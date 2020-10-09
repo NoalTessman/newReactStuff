@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root{
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  ;
+}
+.App{
+  display:grid;
+  grid-template-rows: 50px auto 100px;
+}
+.Header{
+  color: #48bf91;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.Name{
+  font-size: 2rem;
+  font-family: fantasy;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Links{
+  font-size: 1rem;
+  font-family: fantasy;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-column: 3/4;
+}
+.homePage1{
+  height: 80vh;
+  padding: 5px 5px 0px;
+}
+#profile{
+  height: 300px;
+  border-radius:  50%;
+}
+.homePage1 > p{
+  color: red;
+}
+.Footer{
+  background-color: red;
+  }
