@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  margin:0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+  background-image: url("./Test/background2.png");
+  background-size: 100% 100%;
+  background-color: #FFFFBD;
+  width: 100vw;
+  height: 100vh;
+}
+.App{
+  display:grid;
+  grid-template-columns: 23.2% 53% auto;
+}
+.section1{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  align-items: center;
+}
+#firstText{
+  writing-mode: sideways-lr;
+  font-family: 'Modern Sans';
+  font-size: 4rem;
+  margin-right: 0px;
+}
+.section2{
+padding-left: 4%;
+padding-top: 13%;
+font-family: 'Modern Sans';
+}
+#name{
+font-size: 2rem;
+padding-left: 3%;
+}
+#item{
+padding-top: 7%;
+padding-left: 60%;
+font-size: 4rem;
+}
+#item2{
+padding-top: 5%;
+padding-left: 25%;
+font-size: 4rem;
+}
+#item2:hover,#item:hover{
+  background-color: rgba(230, 230, 250, 0.116);
+  color: hotpink;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.section3{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+}
+#thirdText{
+  writing-mode: sideways-rl;
+  font-family: 'Modern Sans';
+  font-size: 4rem;
+  margin-left: 0px;
 }
