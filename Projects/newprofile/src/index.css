@@ -1,76 +1,48 @@
-body{
-  margin:0;
+body{margin:0;
+font-size: 100%;
 }
-#root{
-  background-image: url("./Test/background2.png");
-  background-size: 100% 100%;
-  background-color: #FFFFBD;
-  width: 100vw;
-  height: 100vh;
-}
-.App{
-  display:grid;
-  grid-template-columns: 23.2% 53% auto;
-}
-.section1{
-  display: flex;
-  flex-direction: row-reverse;
-  height: 100vh;
-  align-items: center;
-}
-#firstText{
-  writing-mode: sideways-lr;
-  font-family: 'Modern Sans';
-  font-size: 4rem;
-  margin-right: 0px;
-}
-.section2{
-font-family: 'Modern Sans';
-display:grid;
-grid-template-rows: 13% 72% auto;
-}
-.section2box{
-  grid-row: 2/3;
-  display:grid;
-  grid-template-columns: repeat(5,20%);
-  grid-template-rows: 10% repeat(10,10%);
-}
-#name{
-font-size: 2rem;
-grid-column: 1/2;
-justify-self: right;
 
+.NavBar{
+    height:2rem;
+    display: grid;
+    grid-template-columns: 40vw 30vw 30vw;
+    grid-template-rows: 2rem;
+    border-bottom: 1px solid #1DD0CE;
+    background-color: white;
 }
-#item{
-font-size: 4rem;
-grid-column: 4/5;
-grid-row: 3/4;
+.NavName{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Alex Brush";
+    padding-left: 1em;
+    font-size: 1.5rem;
+    color: #1DD0CE;
+    letter-spacing: 2.5px;
 }
-#item2{
-font-size: 4rem;
-grid-column: 2/3;
-grid-row: 5/6;
+.NavSocialMedia{
 }
-#item3{
-  font-size: 4rem;
-  grid-row: 8/9;
-  grid-column: 4/5;
-  }
-#item2:hover,#item:hover,#item3:hover{
-  background-color: rgba(230, 230, 250, 0.116);
-  color: hotpink;
-  transition: .3s ease-in-out;
-  cursor: pointer;
+.NavLinks{
+    color: #0E9594;
+    display:grid;
+    grid-template-columns: repeat(4, 25%);
 }
-.section3{
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  align-items: center;
+.NavLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    font-family: Open Sans;
 }
-#thirdText{
-  writing-mode: sideways-rl;
-  font-family: 'Modern Sans';
-  font-size: 4rem;
-  margin-left: 0px;
+.NavLink:hover{
+    background-color: #F5DFBB;
+    cursor: pointer;
+    transition: .6s;
+}
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++ABOUT Page++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++ */
+
+.AboutContainer{
+    
 }

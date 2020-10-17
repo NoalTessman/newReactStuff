@@ -1,0 +1,7 @@
+Ideas for coding for the time being
+
+More tutorials for react to learn different areas of react. 
+Photography Website
+Profile
+Poetry bot
+Martingale tester with UI

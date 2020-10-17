@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react'
+import ProfessionalProfile from "./ProfessionalProfile"
+import {Route, Switch, BrowserRouter} from "react-router-dom"
+import About from "./newProfilePages/About"
+import Contact from "./newProfilePages/Contact"
+import Projects from "./newProfilePages/Projects"
+import Tools from "./newProfilePages/Tools"
 
-function App() {
-  return (
-    <div className="App">
-      <div className="section1"><p id="firstText">- Web Developer -</p></div>
-      <div className="section2">
-        <div className="section2box">
-        <p id="name">Noal Tessman</p>
-        <p id="item">Projects</p>
-        <p id="item2">Resume</p>
-        <p id="item3">About</p>
-        </div>
-      </div>
-      <div className="section3"><p id="thirdText">- Software Engineer -</p></div>
-    </div>
-  );
+export default class App extends Component {
+    render() {
+        return (
+            <BrowserRouter>
+            <div>
+                <Switch>
+                    <Route exact path="/" component={ProfessionalProfile}/>
+                    <Route path="/About" component={About}/>
+                    <Route path="/Contact" component={Contact}/>
+                    <Route path="/Projects" component={Projects}/>
+                    <Route path="/Tools" component={Tools}/>
+                </Switch>
+            </div>
+            </BrowserRouter>
+        )
+    }
 }
-
-export default App;
