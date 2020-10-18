@@ -16,8 +16,8 @@ export default class ProfessionalProfile extends Component {
                             <Link to="/About"><span id="homeLinkText">About ></span></Link></div>    
                         <div className="homeLink">
                             <Link to="/Projects"><span id="homeLinkText">Projects ></span></Link></div>    
-                        <div className="homeLink">
-                            <Link to="/Tools"><span id="homeLinkText">Tools I Use ></span></Link></div>    
+                        {/* <div className="homeLink">
+                            <Link to="/Tools"><span id="homeLinkText">Tools I Use ></span></Link></div>     */}
                         <div className="homeLink">
                             <Link to="/Contact"><span id="homeLinkText">Contact ></span></Link></div>    
                     </div>

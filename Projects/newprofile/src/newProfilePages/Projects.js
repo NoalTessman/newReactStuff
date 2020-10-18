@@ -6,7 +6,7 @@ export default class Projects extends Component {
         return (
             <div>
                 <NavBar />
-                Projects
+                <div className="ProjectHome"></div>
             </div>
         )
     }

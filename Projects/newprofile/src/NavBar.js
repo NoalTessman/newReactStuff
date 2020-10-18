@@ -13,15 +13,11 @@ export default class NavBar extends Component {
                 </div>
                 <div className="NavSocialMedia">
                 </div>
-                <div className="NavLinks">   
-                        <div className="NavLink">    
-                            <Link to="/About">About</Link></div>    
-                        <div className="NavLink">
-                            <Link to="/Projects">Projects</Link></div>    
-                        <div className="NavLink">
-                            <Link to="/Tools">Tools I Use</Link></div>    
-                        <div className="NavLink">
-                            <Link to="/Contact">Contact</Link></div>
+                <div className="NavLinks">       
+                            <Link to="/About" className="NavLink">About</Link>    
+                            <Link to="/Projects" className="NavLink">Projects</Link>    
+                            {/* <Link to="/Tools" className="NavLink">Tools I Use</Link>     */}
+                            <Link to="/Contact" className="NavLink">Contact</Link>
                 </div>
             </div>
         )
