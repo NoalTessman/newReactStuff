@@ -15,7 +15,7 @@ export default class Projects extends Component {
                         <ProjectTile title="Old Portfolio" id="OldProfile"/>  
                         <ProjectTile title="PoemFinder" id="PoemFinder"/> 
                         <ProjectTile title="Dog Hotel" id="DogHotel"/> 
-                        <ProjectTile title="Genetic Algorithm" id="GeneticAlgorithm"/> 
+                        <ProjectTile title="Delaney Chlarson Photography" id="PhotographyWebsite"/> 
                     </div> 
                 </div>
                 <Footer />

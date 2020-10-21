@@ -7,7 +7,8 @@ export default class Info extends Component {
             <div className="PageContainer">
                 <SideBar/>
                 <div className="InfoContainer">
-                lormAOSIHdosaHDolormAOSIHdosaHDo
+                For Pricing,
+                contact me and we can work something out
                 </div>
             </div>
         )

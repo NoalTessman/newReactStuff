@@ -13,9 +13,9 @@ export default class Footer extends Component {
             <div className="FooterContainer">
                 <div className="Copyright">Noal Tessman@2020</div>
                 <div className="FooterSocialMediaLinks">
-                    <div className="FooterSocialMediaLink"><img src={gmail1}/></div>
-                    <div className="FooterSocialMediaLink"><img src={instagram1}/></div>
-                    <div className="FooterSocialMediaLink"><img src={linkedin2}/></div>
+                    <a href="mailto:noal900@email.com" target="_blank"><div className="FooterSocialMediaLink"><img src={gmail1}/></div></a>
+                    <a href="https://www.instagram.com/drums_and_other_things/" target="_blank"><div className="FooterSocialMediaLink"><img src={instagram1}/></div></a>
+                    <a href="https://www.linkedin.com/in/noal-tessman-1b602aaa/" target="_blank"><div className="FooterSocialMediaLink"><img src={linkedin2}/></div></a>
                     <a href="https://github.com/NoalTessman" target="_blank"><div className="FooterSocialMediaLink"><img src={github1}/></div></a>
                 </div>
             </div>

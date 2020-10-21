@@ -15,12 +15,12 @@ export default class About extends Component {
                             I take pictures of things really good in a good way and in a way that make you money
                             I make you money for free wait no for money for me so I can buy things to make more money for me
                             Good picture taker I am.
-                            <p>
-                            Fourty long years ago I willed myself into existence by killing the sultan of Saudi Arabia, he was short and easy to maim, the murder part I thought would be harder
+                            <p id="other">
+                            Fourty long years ago I willed myself into existence by killing the sultan of Saudi Arabia, he was easy to maim, the murder part I thought would be harder
                             but it really wasn't.
                             </p>
                             <p>
-                                I kill rabbits by looking at them, don't tell anyone or they will take me away. I don't know what to do if I can't continuosly murder.
+                                I kill First-borns by looking at them, don't tell anyone or they will take me away. I don't know what to do if I can't continuosly murder.
                             </p>
                         </p> 
                 </div>

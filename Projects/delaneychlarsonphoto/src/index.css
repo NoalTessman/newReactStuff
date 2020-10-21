@@ -27,9 +27,11 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 .HomeLink{
     font-size: 3rem;
     font-family: open sans light;
+
 }
 .HomeLink span{
     border: 1px white solid;
+    background-color: rgba(9, 119, 5, 0.205);
     padding: 2px 8px 2px;
     border-radius: 2px;
 }
@@ -75,7 +77,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 +++++++++++++++++++++++++++++++++++++++ */
 .PageContainer{
     display: grid;
-    grid-template-columns: 7.5% 92.5% ;
+    grid-template-columns: 6vw auto;
     font-family: open sans light;
 }
 .NavBar{
@@ -93,6 +95,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     flex-direction: column;
     justify-items: center;
     grid-row: 1/2;
+    padding-top:5%;
 }
 
 #NavBarTitleTop{
@@ -113,7 +116,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     grid-row: 3/4;
     font-size: 1.5rem;
     padding-left: 15px;
-    background-color: gray;
+    background-color: rgb(138, 138, 138);
     color: white;
     max-width: 100%;
 }
@@ -131,27 +134,39 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     grid-template-columns: repeat(10,10%);
 }
 #AboutTitle{
-    font-family: open sans bold;
+    font-family: open sans;
+    font-size: 1.23em;
 }
 .AboutPhoto{
-    max-width: 100%;
+    max-width: 95%;
     grid-row: 1/10;
     grid-column: 1/6;
-    padding-top: 5%;
+    padding-top: 2.5%;
+    padding-left: 2.5%;
 }
 .AboutDescription{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 20px;
     grid-row: 1/10;
     grid-column: 6/10;
+}
+#other{
+    background-color: black;
+    color: white;
+    padding: 5% 15% 5%;
+    margin-left: -10%;
 }
 /* +++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++Info++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++ */
 .InfoContainer{
-    background-color: rebeccapurple;
     grid-column: 2/3;
-    height: 200vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: open sans;
+    font-size: 2rem;
 }
 /* +++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++Contact++++++++++++++++++
@@ -164,4 +179,49 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 +++++++++++++++++++++++++++++++++++++++ */
 .PortfolioContainer{
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns:repeat(3, 33%);
+    height: 100vh;
+    width: 94vw;
+}
+.PortfolioTileContainer{
+    height: 100%;
+    background-image: white;
+
+}
+.PortfolioTileContainer div{
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    font-family: open sans;
+    font-size: 4rem;
+    height: 100%;
+    width: 100%;
+    color:white;
+    background: no-repeat center;
+}
+.PortfolioTileContainer div:hover{
+   cursor: pointer;
+}
+.PortfolioTileContainer span{
+    margin-bottom: -40%;
+    font-size: 7;
+    
+}
+#Family{
+    background: url(./PagePhotos/Family.jpg) no-repeat center;
+    background-size: cover;
+    text-shadow:3px 3px black;
+
+}
+#Portrait{
+    background: url(./PagePhotos/Portrait.jpg) no-repeat center;
+    background-size: cover;
+    text-shadow:3px 3px black;
+
+}
+#Business{
+    background: url(./PagePhotos/Business.jpg);
+    background-size: cover;
+    text-shadow:3px 3px black;
 }
