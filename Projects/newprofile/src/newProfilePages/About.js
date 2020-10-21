@@ -4,8 +4,8 @@ import Footer from "../Footer"
 export default class About extends Component {
     render() {
         return (
-            <div className="PageContainer">
-                <NavBar />
+            <div>
+            <NavBar />
                 <div className="AboutContainer">
                     <div className="AboutProfile"></div>
                     <div className="AboutDescription">
@@ -52,8 +52,8 @@ export default class About extends Component {
                             <li>Adobe Illustrator</li>
                             <li>Adobe XD</li>
                             <li>Adobe Premiere</li>
-                            <li>Linux (Mint, Ubuntu,</li>
-                            <li>Lubuntu, xfce, Parrot)</li>
+                            <li>Linux (Mint, Ubuntu, 
+                                Lubuntu, xfce, Parrot)</li>
                             <li>MacOS</li>
                             <li>Windows (xp/7/8/10)</li>
                             <li>Active Directory</li>
@@ -75,6 +75,7 @@ export default class About extends Component {
                             <li>Django</li>
                             <li>After Affects</li>
                             <li>Data Science</li>
+                            <li>Docker </li>
                             </ul>
                         </div>
                     </div>

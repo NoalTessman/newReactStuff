@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import {Link} from "react-router-dom"
+
 import gmail1 from "./icons/gmail1.png"
 import instagram2 from "./icons/instagram2.png"
 import instagram1 from "./icons/instagram1.png"
@@ -14,7 +16,7 @@ export default class Footer extends Component {
                     <div className="FooterSocialMediaLink"><img src={gmail1}/></div>
                     <div className="FooterSocialMediaLink"><img src={instagram1}/></div>
                     <div className="FooterSocialMediaLink"><img src={linkedin2}/></div>
-                    <div className="FooterSocialMediaLink"><img src={github1}/></div>
+                    <a href="https://github.com/NoalTessman" target="_blank"><div className="FooterSocialMediaLink"><img src={github1}/></div></a>
                 </div>
             </div>
         )
