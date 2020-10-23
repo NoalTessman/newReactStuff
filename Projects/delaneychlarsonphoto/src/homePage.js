@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import HamburgerMenu from 'react-hamburger-menu'
 import {Link} from "react-router-dom"
 
 export default class homePage extends Component {
@@ -6,21 +7,21 @@ export default class homePage extends Component {
         return (
             <div className="HomeContainer">
                 <div className="HomeHeader">
-                <Link to="/About">
+                <Link to="/About" id="HomeLinkGrid">
                 <div className="HomeLink"><span>About</span></div>
                 </Link>
-                <Link to="/Portfolio">
+                <Link to="/Portfolio" id="HomeLinkGrid">
                 <div className="HomeLink"><span>Portfolio</span></div>
-                </Link>
+                </Link >
                 <div className="HomeTitle">
-                <span id="HomeName">Delaney Chlarson</span>
+                <span id="HomeName">Delaney S Chlarson</span>
                 <span id="HomeTitles">Portrait<span><div>&</div></span>Family</span> 
                 <span id="HomeTitles2">Photography</span>
                 </div>
-                <Link to="/Info">
+                <Link to="/Info" id="HomeLinkGrid">
                 <div className="HomeLink"><span>Info</span></div>
                 </Link>
-                <Link to="/Contact">
+                <Link to="/Contact" id="HomeLinkGrid">
                 <div className="HomeLink"><span>Contact</span></div>
                 </Link>
                 </div>

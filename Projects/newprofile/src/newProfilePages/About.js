@@ -12,18 +12,15 @@ export default class About extends Component {
                         <p class="AboutDescriptionTitle">About</p>
                         <p class="AboutDescriptionBody"> 
                             <p>Hi, I'm Noal.</p> 
-                            I've been around the technology sphere enough
+                            I've been in the technology world enough
                             to know many different facets of what makes 
-                            a person mutually benificial, exciting, and happy to work with. I have many 
+                            a person exciting and pleasent to work with. I have many 
                             years of experience in the world of IT and 
-                            many years of coding using many different 
-                            tools to make that easier. 
+                            coding, along with knowledge of a wide array tools and programs to make that easier.
                             <p>
-                            I used to think my entire goal was to be "the best"
-                            developer, but with my experience I know 
-                            the best way forward is to make your website 
-                            and how it performs something you don't 
-                            have to worry about.
+                            My goal is to make your website something
+                            that fits the needs of you or your company while putting your mind at ease so
+                            you can focus on growing your business and getting home by 5.
                             </p> 
                         </p>
                     </div>

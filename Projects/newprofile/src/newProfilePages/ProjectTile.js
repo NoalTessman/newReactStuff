@@ -6,7 +6,9 @@ export default class ProjectTile extends Component {
 
         return (
             <div className="ProjectTile" id={this.props.id}>
-                <span>{this.props.title}</span>
+                <a href={this.props.link} target={this.props.target?this.props.target:`_blank`}>
+                    {this.props.title}
+                </a>
             </div>
         )
     }

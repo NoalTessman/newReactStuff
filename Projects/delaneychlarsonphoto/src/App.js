@@ -6,6 +6,10 @@ import Info from './components/Info'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import About from './components/About';
+import Portrait from "./components/Portrait"
+import Family from "./components/Family"
+import Business from "./components/Business"
+
 
 function App() {
   return (
@@ -15,7 +19,10 @@ function App() {
         <Route path="/Info" component={Info}/>
         <Route path="/About" component={About}/>
         <Route path="/Contact" component={Contact}/>
-        <Route path="/Portfolio" component={Portfolio}/>
+        <Route exact path="/Portfolio" component={Portfolio}/>
+        <Route path="/Portfolio/Portrait" component={Portrait}/>
+        <Route path="/Portfolio/Family" component={Family}/>
+        <Route path="/Portfolio/Business" component={Business}/>
     </Switch>
     </BrowserRouter>
   );

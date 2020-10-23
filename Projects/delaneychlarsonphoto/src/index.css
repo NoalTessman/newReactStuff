@@ -2,6 +2,16 @@ body{
     margin:0;
     width: 100vw;
     max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+}
+#root{
+    height:100%;
+    margin:0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
 }
 a:focus, a:hover, a:visited, a:link, a:active, a{
     color: inherit;
@@ -34,6 +44,8 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     background-color: rgba(9, 119, 5, 0.205);
     padding: 2px 8px 2px;
     border-radius: 2px;
+    transition: .5s ease-in-out;
+
 }
 .HomeLink span:hover{
     border: none;
@@ -41,7 +53,6 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     border: 1px rgba(255, 255, 255, 0) solid;
     background-color: white;
     color: rgb(71, 71, 71);
-    transition: .5s ease-in-out;
 }
 .HomeTitle{
     display: flex;
@@ -124,6 +135,12 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
     background-color: white;
     color: black;
 }
+.NavLinkHamburger{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    height: 0px;
+    width: 0px;
+}
 /* +++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++About++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++ */
@@ -136,6 +153,7 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 #AboutTitle{
     font-family: open sans;
     font-size: 1.23em;
+    display: grid;
 }
 .AboutPhoto{
     max-width: 95%;
@@ -173,7 +191,51 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 +++++++++++++++++++++++++++++++++++++++ */
 .ContactContainer{
     grid-column: 2/3;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
+    background: url(./backgroundImages/ContactBackground2.jpg) center no-repeat;
+    background-size: 100%;
+    color:white;
+    text-shadow: 2px 2px black;
 }
+.ContactTitle{
+    font-size: 4rem;
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.ContactBio{
+    font-size: 2rem;
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 300px;
+    display:grid;
+    grid-template-rows: 33% 66%;
+    height: 100%;
+}
+.ContactBio p{
+    grid-row: 1/2;
+}
+.ContactSocialMediaLinks{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+    flex-direction: column;
+}
+.ContactSocialMediaLink{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++PortFolio++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++ */
@@ -205,23 +267,186 @@ a:focus, a:hover, a:visited, a:link, a:active, a{
 }
 .PortfolioTileContainer span{
     margin-bottom: -40%;
-    font-size: 7;
+    font-weight: lighter;
+    text-shadow: 1px 1px black;
     
+}
+.PortfolioTileContainer span:hover{
+    margin-bottom: -40%;
+    font-size: 7;
 }
 #Family{
     background: url(./PagePhotos/Family.jpg) no-repeat center;
     background-size: cover;
-    text-shadow:3px 3px black;
 
 }
 #Portrait{
     background: url(./PagePhotos/Portrait.jpg) no-repeat center;
     background-size: cover;
-    text-shadow:3px 3px black;
 
 }
 #Business{
     background: url(./PagePhotos/Business.jpg);
     background-size: cover;
-    text-shadow:3px 3px black;
 }
+/* +++++++++++++++++++++++++++++++++++++++
+++++++++++++++PortFolioPages+++++++++++++
++++++++++++++++++++++++++++++++++++++++ */
+.ImageContainer{
+    grid-column: 2/3;
+    object-fit: cover;
+}
+.ImageImage img{
+    height: 100vh;
+    width: 100%;
+    object-fit: scale-down;
+}
+.thumbs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .HomeContainer{
+        background: url(./backgroundImages/IMG_8229.jpg) no-repeat center;
+        height: 100%;
+    }
+    .HomeHeader{
+        display: grid;
+        height:100%;
+
+    }
+    .HomeLink{
+        font-size: 3rem;
+        font-family: open sans light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .HomeLink span{
+        border: 1px white solid;
+        background-color: rgba(9, 119, 5, 0.205);
+        padding: 2px 8px 2px;
+        border-radius: 2px;
+        transition: .5s ease-in-out;
+        margin: 10% 0% 10%;
+    }
+    .HomeTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: alex brush;
+        grid-row: 1/2;
+    }
+    #HomeName{
+        font-size: 2.5rem;
+        text-decoration: underline ;
+        text-underline-position: below;
+    }
+    #HomeTitles{
+        font-family: open sans light;
+        font-size: 1.7rem;
+        line-height: 100%; 
+        grid-row: 2/3;
+    }
+    #HomeTitles2{
+        font-size: 2rem;
+        font-family: open sans light;
+        letter-spacing: 3px;
+    }
+    #HomeTitles div{
+        font-family: alex brush;
+        font-size: 2rem;   
+    }
+
+
+
+    .PageContainer{
+        display: grid;
+        grid-template-rows:10% 90%;
+        font-family: open sans light;
+    }
+    .NavBar{
+        display:grid;
+        width: 100%;
+        height: 6vh;
+        grid-row: 1/2;
+        position: fixed;
+        background-color: white;
+        grid-template-rows: 100%;
+        grid-template-columns: 20% 60% 20%;
+        position: fixed;
+    }
+
+    .NavBarTitle{
+        display:grid;
+        align-items: left;
+        justify-items: left;
+        padding-top:0%;
+    }
+    
+    #NavBarTitleTop{
+        font-size: 2rem;
+        font-family: alex brush;
+        padding:2%;
+    }
+    #NavBarTitleMiddle{
+        font-size: 0px;
+    }
+    #NavBarTitleMiddle span{
+        font-family: alex brush;
+        font-size:0px;
+    }
+    #NavBarTitleBottom{
+        font-size: 0px;
+    }
+    .NavBarLinks{
+        font-size: 1rem;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-color: rgb(138, 138, 138);
+        color: black;
+        max-width: 100%;
+    }
+    .NavBarLinks a:hover{
+        background-color: white;
+        color: black;
+    }
+    .NavLinkHamburger{
+        grid-row: 1/2;
+        grid-column: 3/4;
+        background-color: red;
+        height: 100%;
+        width: 100%;
+    }
+
+    .AboutContainer{
+        grid-row: 2/3;
+        display: grid;
+        grid-template-rows: repeat(10,10vh);
+    }
+    #AboutTitle{
+        font-family: open sans;
+        font-size: 1.23em;
+        display: grid;
+    }
+    .AboutPhoto{
+        max-width: 95%;
+        grid-row: 1/10;
+        grid-column: 1/6;
+        padding-top: 2.5%;
+        padding-left: 2.5%;
+    }
+    .AboutDescription{
+        font-size: 1rem;
+        padding: 20px;
+        grid-row: 1/10;
+        grid-column: 6/10;
+    }
+    #other{
+        background-color: black;
+        color: white;
+        padding: 5% 15% 5%;
+    }
+  }
