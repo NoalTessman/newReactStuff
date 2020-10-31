@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./ProfessionalProfile.css"
-import {Link, Router} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 export default class ProfessionalProfile extends Component {
     render() {
@@ -9,7 +9,10 @@ export default class ProfessionalProfile extends Component {
                     <div className="homeTitle">
                         <p className="homeName">Noal Tessman</p>
                         <p className="homeTitles">
-                        Software Developer - Web Designer - Weather Nerd</p>
+                            <p>╫Software Developer </p>
+                            <p>╫Web Designer </p>
+                            <p>╫Weather Nerd</p>
+                        </p>
                     </div>
                     <div className="homeLinks">
                         <div className="homeLink">

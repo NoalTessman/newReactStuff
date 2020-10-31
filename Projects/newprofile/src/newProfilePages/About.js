@@ -67,13 +67,12 @@ export default class About extends Component {
                         </div>
                         <div className="AboutWhatIDoItemList" id="AboutWhatIDoItemListLearning">
                         <p>Learning</p>
-                            <ul>
+                            
                             <li>TypeScript</li>
                             <li>Django</li>
                             <li>After Affects</li>
                             <li>Data Science</li>
                             <li>Docker </li>
-                            </ul>
                         </div>
                     </div>
                 <Footer />

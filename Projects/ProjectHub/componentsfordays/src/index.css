@@ -1,0 +1,48 @@
+body{
+  margin:0px;
+  padding: 0px;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src:url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src:url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+}
+#Card img{
+  object-fit: scale-down;
+  width: 100%;
+}
+#root{
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans";
+}
+.AppContainer{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows:2fr 8fr;
+  background-color: gray;
+}
+.AppTitle{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ComponentCard{
+  color: green;
+  padding-left: 5%;
+  font-size: 2rem;
+}
+#CardContainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr
+}

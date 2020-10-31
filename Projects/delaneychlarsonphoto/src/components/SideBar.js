@@ -24,7 +24,7 @@ export default class SideBar extends Component {
                 <Link to="/">
                     <div className="NavBarTitle">
                 
-                        <span id="NavBarTitleTop">DC</span>
+                        <span id="NavBarTitleTop">DSC</span>
                         <span id="NavBarTitleMiddle">Portrait <span>&</span> Family</span>
                         <span id="NavBarTitleBottom">Photography</span>
                     </div>
@@ -38,7 +38,7 @@ export default class SideBar extends Component {
                     </Link>
                     <Link to="/Info">
                         <p>
-                        Info
+                        Services
                         </p>
                     </Link>
                     <Link to="/Portfolio">

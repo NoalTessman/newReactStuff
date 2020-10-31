@@ -11,16 +11,17 @@ export default class About extends Component {
                         <img src={AboutPhoto} className="AboutPhoto"/>
                         <p className="AboutDescription">
                                 <p id="AboutTitle">Who I Am</p>
-                            My name is Delaney and I'm a realyl good photographer who is friendly and can take pictures really good.
-                            I take pictures of things really good in a good way and in a way that make you money
-                            I make you money for free wait no for money for me so I can buy things to make more money for me
-                            Good picture taker I am.
+                                To me, photography is about memories. I like to capture a moment in time that you can look back on for years to come. 
                                 <p id="other">
-                                Fourty long years ago I willed myself into existence by killing the sultan of Saudi Arabia, he was easy to maim, the murder part I thought would be harder
-                                but it really wasn't.
+                                Whether it’s your bridal photos, family portraits, or graduation photos, my goal is to freeze that moment in time so you can relive those wonderful memories in five, ten, twenty years in the future. 
                                 </p>
                             <p>
-                                I kill First-borns by looking at them, don't tell anyone or they will take me away. I don't know what to do if I can't continuosly murder.
+                            You can contact me <a href="./Contact"><span id="email">
+                                here
+                            </span> </a>for a complimentary consultation to discuss your future photoshoot.
+                            </p>
+                            <p id="SignOff">
+                                -Delaney
                             </p>
                         </p> 
                 </div>
