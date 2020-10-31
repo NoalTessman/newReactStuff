@@ -1,0 +1,1 @@
+DB_CONNECTION = 'mongodb+srv://testboy:VeryGoodPassword@cluster0.tfmck.mongodb.net/TestDatabase?retryWrites=true&w=majority'
