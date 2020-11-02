@@ -8,7 +8,9 @@ export default class About extends Component {
             <div className="PageContainer">
                 <SideBar/>
                 <div className="AboutContainer">
-                        <img src={AboutPhoto} className="AboutPhoto"/>
+                    <div className="AboutPhoto">
+                        <img src={AboutPhoto}/>
+                    </div>
                         <p className="AboutDescription">
                                 <p id="AboutTitle">Who I Am</p>
                                 To me, photography is about memories. I like to capture a moment in time that you can look back on for years to come. 

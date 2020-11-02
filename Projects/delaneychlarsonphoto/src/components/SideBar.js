@@ -2,18 +2,20 @@ import React, { Component } from 'react'
 import {Link} from "react-router-dom"
 import About from './About'
 import HamburgerMenu from "react-hamburger-menu"
+import Menu from "./Menu"
+
 
 export default class SideBar extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             isOpen:true
+             isOpen:false
         }
     }
     handleClick() {
         this.setState({
-            open: !this.state.open
+            open: !this.state.open,
         });
     }
     render() {
@@ -29,7 +31,7 @@ export default class SideBar extends Component {
                         <span id="NavBarTitleBottom">Photography</span>
                     </div>
                 </Link>
-
+                {this.state.open && <Menu />}
                 <div className="NavBarLinks">
                     <Link to="/About">
                         <p>
@@ -51,19 +53,19 @@ export default class SideBar extends Component {
                         Contact
                         </p>
                     </Link>
-                    {/* <div className="NavLinkHamburger">
+                </div>
+                <div className="NavLinkHamburger">
                         <HamburgerMenu
                         isOpen={this.state.open}
                         menuClicked={this.handleClick.bind(this)}
-                        width={18}
+                        width={30}
                         height={15}
-                        strokeWidth={1}
+                        strokeWidth={3}
                         rotate={0}
                         color='black'
                         borderRadius={0}
                         animationDuration={0.5}/>
-                    </div> */}
-                </div>
+                    </div>
             </div>
         )
     }
